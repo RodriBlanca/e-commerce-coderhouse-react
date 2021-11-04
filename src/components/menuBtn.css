@@ -1,0 +1,110 @@
+@media screen and (min-width: 270px) {
+  .menu-list {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0px 3px 5px rgb(100, 100, 100);
+    padding: 0;
+  }
+
+  .menu-button {
+    height: 45px;
+    width: 45px;
+    background-color: red;
+    position: absolute;
+    top:25px;
+    left: 15px;
+  }
+
+  .menu-label {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .menu-line {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    top: 45%;
+    left: 5%;
+  }
+
+  .menu-line::after {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: -10px;
+    width: 30px;
+  }
+
+  .menu-line::before {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+  }
+
+  .menu-checkbox {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .menu-list {
+    display: flex;
+    animation: menu 0.5s ease;
+  }
+
+  .menu-list__item {
+    font-size: 1.3em;
+    margin: 15px 0;
+  }
+
+  .menu-list__title {
+    font-size: 1.5em;
+  }
+
+  .menu-list div {
+    border-bottom: 1px solid #e1e1e1;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  @keyframes menu {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu {
+    display: none;
+  }
+}

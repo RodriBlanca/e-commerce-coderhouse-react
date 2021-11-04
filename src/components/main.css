@@ -1,0 +1,10 @@
+@media screen and (min-width: 270px) {
+  .main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

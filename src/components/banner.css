@@ -1,0 +1,86 @@
+@media screen and (min-width: 270px) {
+  .banner {
+    margin-top: 70px;
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    background-color: tomato;
+  }
+
+  .banner-button {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: absolute;
+    top: 350px;
+    left: 15px;
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
+
+  .banner-button::after {
+    content: "";
+    height: 35px;
+    width: 2px;
+    background-color: #ff2301;
+    position: absolute;
+    top: 5px;
+    left: 105px;
+  }
+
+  .banner-button::before {
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #ff2301;
+    position: absolute;
+    top: 40px;
+    left: 7px;
+  }
+
+  .banner-button:active {
+    left: 20px;
+    top: 355px;
+  }
+
+  .banner-button:active::after {
+    top: 0;
+    left: 100px;
+  }
+
+  .banner-button:active::before {
+    top: 35px;
+    left: 0px;
+    width: 102px;
+  }
+
+  .banner-img {
+    max-width: 100%;
+  }
+
+  .banner-text {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    animation: show-text 2s ease;
+    font-weight: 800 ital;
+    font-family: "Raleway";
+  }
+
+  @keyframes show-text {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      color: white;
+    }
+  }
+}

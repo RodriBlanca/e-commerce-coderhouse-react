@@ -1,0 +1,21 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,800;1,700&display=swap");
+
+html {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 270px) {
+  body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 70px 1fr 200px;
+  }
+}

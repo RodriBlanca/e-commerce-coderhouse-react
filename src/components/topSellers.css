@@ -1,0 +1,13 @@
+@media screen and (min-width: 270px) {
+  .top-sellers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .top-sellers__title {
+    font-size: 1.7em;
+  }
+}
