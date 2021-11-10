@@ -3,12 +3,14 @@
     margin-right: 15px;
   }
 
-  .trolley > label > img{
-    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(170deg) brightness(100%) contrast(100%);
-  }
-
   .trolley-input {
     display: none;
+  }
+
+  .trolley > label > img {
+    filter: invert(1);
+    width: 35px;
+    height: 35px;
   }
 
   .trolley-input ~ .products {
@@ -32,15 +34,24 @@
     animation: trolley 0.5s ease;
   }
 
+  .trolley-label {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .products-head {
     display: flex;
   }
 
   .products-body {
     min-height: 200px;
-    width: 96%;
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 15px;
+    display: block;
   }
 
   .products-title {

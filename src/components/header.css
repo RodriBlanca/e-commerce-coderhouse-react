@@ -39,34 +39,53 @@
   }
 
   .user-checkbox {
-    height: 35px;
-    width: 35px;
-  }
-
-  .user-img {
-    height: 35px;
-    width: 35px;
-
-    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(255deg)
-      brightness(100%) contrast(100%);
     display: none;
   }
 
+  .user-img {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(255deg)
+      brightness(100%) contrast(100%);
+  }
+
+  .user-label {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .user-options,
-  .password-options {
+  .password-options,
+  .sign-name,
+  .sign-surname,
+  .sign-email,
+  .sign-password {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 8px 0;
   }
 
   .user-options__label,
-  .password-options__label {
+  .password-options__label,
+  .sign-name__label,
+  .sign-surname__label,
+  .sign-email__label,
+  .sign-password__label {
     font-size: 1.3em;
     margin-bottom: 10px;
   }
 
   .user-options__input,
-  .password-options__input {
+  .password-options__input,
+  .sign-name__input,
+  .sign-surname__input,
+  .sign-email__input,
+  .sign-password__input {
     height: 30px;
     width: 250px;
     border: 1px solid #ff2301;
@@ -74,20 +93,22 @@
     color: #ff2301;
   }
 
-  .user-form__button {
+  .user-form__button,
+  .sign-form__button {
     width: 260px;
     height: 45px;
     border: none;
     background-color: #ff2301;
     color: rgb(255, 255, 255);
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bolder;
     font-size: 1.1em;
     padding: 0;
   }
 
-  .user-form__button::after {
+  .user-form__button::after,
+  .sign-form__button::after {
     content: "";
     height: 45px;
     width: 2px;
@@ -97,7 +118,8 @@
     right: -6px;
   }
 
-  .user-form__button::before {
+  .user-form__button::before,
+  .sign-form__button::before {
     content: "";
     height: 2px;
     width: 260px;
@@ -107,17 +129,20 @@
     right: -6px;
   }
 
-  .user-form__button:focus {
+  .user-form__button:focus,
+  .sign-form__button:focus {
     left: 5px;
     top: 5px;
   }
 
-  .user-form__button:focus::after {
+  .user-form__button:focus::after,
+  .sign-form__button:focus::after {
     top: 0;
     right: 0;
   }
 
-  .user-form__button:focus::before {
+  .user-form__button:focus::before,
+  .sign-form__button:focus::before {
     top: 44px;
     right: 0px;
     width: 260px;
@@ -132,13 +157,13 @@
     font-size: 1.1em;
   }
 
-  .user-form__title {
+  .user-form__title,
+  .sign-form__title {
     font-size: 1.5em;
-    margin: 0;
-    margin-top: 13px;
   }
 
-  #user-toggle ~ .user-form {
+  #user-toggle ~ .user-form,
+  #user-toggle ~ .sign-form {
     min-height: 400px;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -148,7 +173,8 @@
     display: none;
   }
 
-  #user-toggle:checked ~ .user-form {
+  #user-toggle:checked ~ .user-form,
+  #user-toggle:checked ~ .sign-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +194,14 @@
     padding: 5px;
     margin: 0;
     color: rgb(255, 51, 51);
+  }
+
+  .sign-form__arrow {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
   }
 
   @keyframes log-in {

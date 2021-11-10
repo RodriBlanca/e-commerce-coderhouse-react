@@ -1,11 +1,11 @@
 import React from 'react';
-import trolley from "../../src/assets/cart.png";
+import trolley from "../../src/assets/shopping-cart.png";
 import "./trolley.css";
 
 const Trolley = () => (
     <div className="trolley">
-        <label htmlFor="trolley">
-            <img alt="trolley" src={trolley}/>
+        <label htmlFor="trolley" className="trolley-label">
+            <img alt="trolley" src={trolley} className="trolley-img"/>
         </label>
         <input type="checkbox" className="trolley-input" id="trolley"/>
         <div className="products">
@@ -28,6 +28,6 @@ const Trolley = () => (
             </div>
         </div>
     </div>
-)
+);
 
 export default Trolley;

@@ -21,7 +21,7 @@
     width: 45px;
     background-color: red;
     position: absolute;
-    top:25px;
+    top: 25px;
     left: 15px;
   }
 
@@ -69,9 +69,13 @@
     display: none;
   }
 
+  #menu-toggle:checked + .menu-label > .menu-line::after {
+    top: 500px;
+    animation: menu-cross 2s ease;
+  }
+
   #menu-toggle:checked ~ .menu-list {
     display: flex;
-    animation: menu 0.5s ease;
   }
 
   .menu-list__item {
@@ -99,6 +103,15 @@
 
     100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes menu-cross {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
     }
   }
 }
