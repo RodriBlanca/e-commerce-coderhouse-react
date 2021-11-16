@@ -10,6 +10,7 @@ const Header = () => (
     <header className="header">
         <MenuBtn />
         <h1 className="header-title">e-commerce</h1>
+        <NavBar />
         <div className="options">
             <UserLogIn />
             <Trolley />
