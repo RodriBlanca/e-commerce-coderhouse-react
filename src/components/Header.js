@@ -1,6 +1,5 @@
 import React from 'react';
 import MenuBtn from './MenuBtn';
-import NavBar from './NavBar';
 import Trolley from './Trolley';
 import UserLogIn from './UserLogIn';
 
@@ -10,7 +9,6 @@ const Header = () => (
     <header className="header">
         <MenuBtn />
         <h1 className="header-title">e-commerce</h1>
-        <NavBar />
         <div className="options">
             <UserLogIn />
             <Trolley />
