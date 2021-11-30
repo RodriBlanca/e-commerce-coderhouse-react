@@ -1,9 +1,8 @@
 import React from 'react';
-import Item from '../Item/Item';
+import ItemDetail from '../ItemDetail/ItemDetail';
 import { useFetch } from '../../hooks/useFetch';
 
-const ItemList = () => {
-
+const ItemDetailContainer = () => {
     const url = 'https://fakestoreapi.com/products';
 
     const state = useFetch(url);
@@ -11,7 +10,7 @@ const ItemList = () => {
 
     return (
         <div>
-            {state.data.map(product => <Item 
+            {state.data.map(product => <ItemDetail 
                                             key={product.id}
                                             img={product.image}
                                             description={product.description}
@@ -22,4 +21,4 @@ const ItemList = () => {
     )
 }
 
-export default ItemList;
+export default ItemDetailContainer;
