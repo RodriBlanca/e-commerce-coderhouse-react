@@ -1,5 +1,5 @@
 import React from 'react';
-import TopSellersCarrousel from './TopSellersCarrousel';
+import TopSellersCarrousel from '../TopSellersCarrousel/TopSellersCarrousel';
 
 import "./topSellers.css";
 

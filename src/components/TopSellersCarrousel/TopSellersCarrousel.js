@@ -1,9 +1,9 @@
 import React from 'react';
 
-import barcelona from "../assets/barcelona-jersey.jpg";
-import adidasJacket from "../assets/adidas-jacket.jpg";
-import conjuntoPuma from "../assets/conjunto-puma.jpeg";
-import nikeTennis from "../assets/tennis-nike.jpg";
+import barcelona from "../../assets/barcelona-jersey.jpg";
+import adidasJacket from "../../assets/adidas-jacket.jpg";
+import conjuntoPuma from "../../assets/conjunto-puma.jpeg";
+import nikeTennis from "../../assets/tennis-nike.jpg";
 
 import "./topSellersCarrousel.css";
 

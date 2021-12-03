@@ -1,5 +1,5 @@
 import React from 'react';
-import trolley from '../assets/shopping-cart.png';
+import trolley from '../../assets/shopping-cart.png';
 
 import './cartWidget.css';
 

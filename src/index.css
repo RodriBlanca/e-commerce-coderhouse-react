@@ -19,3 +19,7 @@ body {
     grid-template-rows: 70px 1fr 200px;
   }
 }
+
+#root {
+  min-height: 100vh;
+}

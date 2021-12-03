@@ -1,8 +1,8 @@
 import React from 'react';
-import trolley from "../../src/assets/shopping-cart.png";
-import "./trolley.css";
+import trolley from "../../assets/shopping-cart.png";
+import "./cart.css";
 
-const Trolley = () => (
+const Cart = () => (
     <div className="trolley">
         <label htmlFor="trolley" className="trolley-label">
             <img alt="trolley" src={trolley} className="trolley-img"/>
@@ -30,4 +30,4 @@ const Trolley = () => (
     </div>
 );
 
-export default Trolley;
+export default Cart;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './Banner';
-import TopSellers from './TopSellers';
+import Banner from '../Banner/Banner';
+import TopSellers from '../TopSellers/TopSellers';
 
 import "./main.css";
 
